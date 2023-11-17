@@ -1,46 +1,177 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="迷路探索"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+目が覚めたらなんか迷路の中にいた。[l][r]
 
-メロスは激怒した。[l][r]
+手元には方位磁石がある。いつこんなものを拾ったんだ？[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+まあいいや。とりあえず脱出しよう。[l][r]
 
-(中略)[l][r]
+[cm]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+目の前には道がある。どっちに進もう？[l][r]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_8] →東 [endlink][r]
+[link target=*tag_6] →西 [endlink][r]
+[link target=*tag_3] →北 [endlink][r]
 [s]
 
-*tag_sleep
+*tag_1
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+少し進むとまた道がある。どっちに進もう？[r]
+[link target=*tag_5] →南 [endlink][r]
+[link target=*tag_2] →東 [endlink][r]
+[s]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
-
-【 BAD END 】[l][cm]
-
-[jump target=*start]
-
-*tag_run
-
-[bg storage=run.jpg time=500]
+*tag_2
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
-【 GOOD END 】[l][cm]
+少し進むとまた道がある。どっちに進もう？[r]
+[link target=*tag_6] →南 [endlink][r]
+[link target=*tag_1] →西 [endlink][r]
+[s]
 
+
+*tag_3
+
+[cm]
+
+少し進むとまた道がある。どっちに進もう？[r]
+[link target=*tag_4] →東 [endlink][r]
+[link target=*tag_7] →南 [endlink][r]
+[s]
+
+*tag_4
+
+[cm]
+
+少し進むとまた道がある。どっちに進もう？[r]
+[link target=*tag_3] →西 [endlink][r]
+[link target=*tag_8] →南 [endlink][r]
+[s]
+
+*tag_5
+
+[cm]
+
+少し進むとまた道がある。どっちに進もう？[r]
+[link target=*tag_1] →北 [endlink][r]
+[link target=*tag_6] →東 [endlink][r]
+[s]
+
+*tag_6
+
+[cm]
+
+少し進むとまた道がある。どっちに進もう？[r]
+[link target=*tag_7] →東 [endlink][r]
+[link target=*tag_5] →西 [endlink][r]
+[link target=*tag_10] →南 [endlink][r]
+[link target=*tag_2] →北 [endlink][r]
+[s]
+
+*tag_7
+
+[cm]
+
+少し進むとまた道がある。どっちに進もう？[r]
+[link target=*tag_8] →東 [endlink][r]
+[link target=*tag_6] →西 [endlink][r]
+[link target=*tag_3] →北 [endlink][r]
+[s]
+
+*tag_8
+
+[cm]
+
+少し進むとまた道がある。どっちに進もう？[r]
+[link target=*tag_7] →西 [endlink][r]
+[link target=*tag_12] →南 [endlink][r]
+[link target=*tag_4] →北 [endlink][r]
+[s]
+
+*tag_9
+
+[cm]
+
+少し進むと行き止まりだった。戻ろう。[r]
+[link target=*tag_10] →東 [endlink][r]
+[s]
+
+*tag_10
+
+[cm]
+
+少し進むとまた道がある。どっちに進もう？[r]
+[link target=*tag_11] →東 [endlink][r]
+[link target=*tag_9] →西 [endlink][r]
+[link target=*tag_6] →北 [endlink][r]
+[s]
+
+*tag_11
+
+[cm]
+
+少し進むとまた道がある。どっちに進もう？[r]
+[link target=*tag_12] →東 [endlink][r]
+[link target=*tag_10] →西 [endlink][r]
+[link target=*tag_15] →南 [endlink][r]
+[s]
+
+*tag_12
+
+[cm]
+
+少し進むとまた道がある。どっちに進もう？[r]
+[link target=*tag_11] →西 [endlink][r]
+[link target=*tag_16] →南 [endlink][r]
+[link target=*tag_8] →北 [endlink][r]
+[s]
+
+*tag_13
+
+[cm]
+
+出口みたいだ。[r][l]
+
+[cm]
+脱出成功。[r][l]
+[cm]
 [jump target=*start]
+[s]
+
+
+*tag_14
+
+[cm]
+
+少し進むとまた道がある。どっちに進もう？[r]
+[link target=*tag_15] →東 [endlink][r]
+[link target=*tag_13] →西 [endlink][r]
+[s]
+
+
+*tag_15
+
+[cm]
+
+少し進むとまた道がある。どっちに進もう？[r]
+[link target=*tag_14] →西 [endlink][r]
+[link target=*tag_11] →北 [endlink][r]
+[s]
+
+*tag_16
+
+[cm]
+
+少し進むと行き止まりだった。戻ろう。[r]
+[link target=*tag_12] →北 [endlink][r]
+[s]
+
